@@ -13,4 +13,8 @@ export class PanelSecundarioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  transformar(valor:string){
+    console.log(valor);
+  }
+
 }

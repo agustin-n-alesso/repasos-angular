@@ -1,1 +1,4 @@
-<p>{{miServicio.returnCounter()}}</p>
+<p #valor>{{miServicio.returnCounter()}}</p>
+<div class="cartel" *ngIf="+valor.innerText > 10" (click)="transformar(valor.innerText)" >
+	<span>Pasé el numero 10!!!</span>
+</div>
